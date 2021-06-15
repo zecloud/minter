@@ -1,0 +1,33 @@
+{
+	"network": "florencenet",
+	"rpc": "https://api.tez.ie/rpc/florencenet",
+	"bcd": {
+		"api": "https://api.better-call.dev",
+		"gui": "https://better-call.dev"
+	},
+	"tzkt": {
+		"api": "https://api.florencenet.tzkt.io"
+	},
+	"admin": {
+		"address": "tz1dSimap62gQKBHHmC5JRgeFWDo3QqLMXaf"
+	},
+	"ipfsApi": "https://minter-api.azurewebsites.net",
+	"ipfsGateway": "https://my-ipfs-gateway.azurewebsites.net/",
+	"contractOpts": {
+		"marketplace": {
+			"adminOnly": true,
+			"fee": {
+				"percent": 2,
+				"address": "tz1dSimap62gQKBHHmC5JRgeFWDo3QqLMXaf"
+			}
+		}
+	},
+	"contracts": {
+		"nftFaucet": "KT1AvcCSkxxcQGn2ScENYztH8hWtsVzfbhT4",
+		"marketplace": {
+			"fixedPrice": {
+				"tez": "KT1Snyx11gLvxTfwtyFAZddXJu51WaQm39dV"
+			}
+		}
+	}
+}
