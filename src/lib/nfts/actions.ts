@@ -7,7 +7,7 @@ import { Buffer } from 'buffer';
 import { SystemWithWallet } from '../system';
 import { uploadIPFSJSON } from '../util/ipfs';
 import { NftMetadata } from './decoders';
-
+import {SetGangoghTokenId} from '../util/gangogh';
 function toHexString(input: string) {
   return Buffer.from(input).toString('hex');
 }
@@ -129,6 +129,8 @@ export async function mintTokens(
       booleanAmount: true
     });
     token_info.set('', toHexString(resp.data.ipfsUri));
+    const ggcid=meta.artifactUri?.replace("ipfs://","")
+    await SetGangoghTokenId(system.config.gangoghApi,{cid:ggcid,insta:"gangogh",tokenid:token_id+index})
     mints.push({
       owner: system.tzPublicKey,
       token_metadata: {

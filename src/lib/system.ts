@@ -35,6 +35,7 @@ export interface Config {
   };
   ipfsApi: string;
   ipfsGateway: string;
+  gangoghApi:string;
 }
 
 export enum Status {

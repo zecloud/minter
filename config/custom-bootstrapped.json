@@ -11,6 +11,7 @@
 	"admin": {
 		"address": "tz1dSimap62gQKBHHmC5JRgeFWDo3QqLMXaf"
 	},
+	"gangoghApi":"https://gangogh-nft-maker.azurewebsites.net/api",
 	"ipfsApi": "https://minter-api.azurewebsites.net",
 	"ipfsGateway": "https://my-ipfs-gateway.azurewebsites.net/",
 	"contractOpts": {
