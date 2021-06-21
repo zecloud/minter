@@ -339,6 +339,7 @@ export const mintCsvTokensAction = createAsyncThunk<null, undefined, Options>(
         description: p.description,
         artifactUri: p.artifactUri,
         displayUri: p.displayUri,
+        thumbnailUri :p.thumbnailUri,
         attributes: [],
       };
       return appendAttributes(metadata, attributes);

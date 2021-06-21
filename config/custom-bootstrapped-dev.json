@@ -1,17 +1,17 @@
 {
-	"network": "mainnet",
-	"rpc": "https://rpc.tzbeta.net",
+	"network": "florencenet",
+	"rpc": "https://api.tez.ie/rpc/florencenet",
 	"bcd": {
 		"api": "https://api.better-call.dev",
 		"gui": "https://better-call.dev"
 	},
 	"tzkt": {
-		"api": "https://api.mainnet.tzkt.io"
+		"api": "https://api.florencenet.tzkt.io"
 	},
 	"admin": {
 		"address": "tz1dSimap62gQKBHHmC5JRgeFWDo3QqLMXaf"
 	},
-	"gangoghApi": "https://gangogh-nft-maker.azurewebsites.net/api",
+	"gangoghApi":"https://gangogh-nft-maker.azurewebsites.net/api",
 	"ipfsApi": "https://minter-api.azurewebsites.net",
 	"ipfsGateway": "https://my-ipfs-gateway.azurewebsites.net/",
 	"contractOpts": {
@@ -24,10 +24,10 @@
 		}
 	},
 	"contracts": {
-		"nftFaucet": "KT1V4o6AjrpE77yVhxz7jw5R56vbFfp4nRTP",
+		"nftFaucet": "KT1AvcCSkxxcQGn2ScENYztH8hWtsVzfbhT4",
 		"marketplace": {
 			"fixedPrice": {
-				"tez": "KT1CCaNSCikaBZZ46DaA2rWdguHZSmh6AEws"
+				"tez": "KT1Snyx11gLvxTfwtyFAZddXJu51WaQm39dV"
 			}
 		}
 	}
