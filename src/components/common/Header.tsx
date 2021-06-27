@@ -20,11 +20,11 @@ import {
 import { Plus, Menu as HamburgerIcon } from 'react-feather';
 import { RiStore2Line } from 'react-icons/ri';
 import { MdCollections } from 'react-icons/md';
-import headerLogo from './assets/header-logo.svg';
+import headerLogo from './assets/gangogh.svg';
 import { useSelector, useDispatch } from '../../reducer';
 import { connectWallet, disconnectWallet } from '../../reducer/async/wallet';
 import { MinterButton } from '.';
-import logo from './assets/splash-logo.svg';
+import logo from './assets/gangogh.svg';
 import wallet_icon from './assets/wallet.svg';
 
 interface MobileHeaderLinkProps {
@@ -214,6 +214,9 @@ function NavItems() {
                   height="100%"
                 >
                   <Flex flexDir="column">
+                  <MobileHeaderLink to="/faq" onClick={onClose}>
+                      FAQ
+                    </MobileHeaderLink>
                     <MobileHeaderLink to="/marketplace" onClick={onClose}>
                       Marketplace
                     </MobileHeaderLink>
@@ -275,6 +278,12 @@ function NavItems() {
             <RiStore2Line size={16} />
           </Box>
           <Text ml={2}>Marketplace</Text>
+        </DesktopHeaderLink>
+        <DesktopHeaderLink to="/faq">
+          <Box color="brand.turquoise">
+            <RiStore2Line size={16} />
+          </Box>
+          <Text ml={2}>FAQ</Text>
         </DesktopHeaderLink>
         {system.status === 'WalletConnected' ? (
           <>
