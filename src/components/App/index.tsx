@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Switch, Route } from 'wouter';
 import CreateNonFungiblePage from '../CreateNonFungiblePage';
+import FAQ from './Faq'
 import CollectionsCatalog from '../Collections/Catalog';
 import CollectionDisplay from '../Collections/Catalog/CollectionDisplay';
 import CollectionsTokenDetail from '../Collections/TokenDetail';
@@ -40,6 +41,9 @@ export default function App() {
         <Switch>
           <Route path="/">
             <MarketplaceCatalog />
+          </Route>
+          <Route path="/faq">
+            <FAQ />
           </Route>
           <Route path="/create">
             <CreateNonFungiblePage />
